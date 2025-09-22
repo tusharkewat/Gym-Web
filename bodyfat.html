@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body Fat Calculator - Elite Fitness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Media\Logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="menu">
+    <div class="container flex">
+      <div class="logo">
+        <span class="logo-text">Elite Fitness</span>
+      </div>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="bmi.html">BMI</a></li>
+        <li class="nav-item"><a href="calories.html">Calories</a></li>
+        <li class="nav-item"><a href="bodyfat.html">Body Fat</a></li>
+        <li class="nav-item"><a href="idealweight.html">Ideal Weight</a></li>
+        <li class="nav-item"><a href="bmr.html">BMR</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h1 style="text-align:center;">Body Fat Calculator</h1>
+    <div class="container">
+      <p>The Body Fat Calculator can be used to estimate your total body fat based on specific measurements.</p>
+      <select id="bf-gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input type="number" id="bf-height" placeholder="Height (cm)">
+      <input type="number" id="bf-neck" placeholder="Neck (cm)">
+      <input type="number" id="bf-waist" placeholder="Waist (cm)">
+      <button onclick="calculateBodyFat()" class="btn">Calculate</button>
+      <p id="bf-result"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Elite Fitness</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

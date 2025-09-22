@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
+
+:root {
+  --clr-primary: #ff7f50;
+  --clr-dark: #0a0a0a;
+  --clr-light: #ffffff;
+  --clr-card: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #000, #111);
+  color: var(--clr-light);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 12px 0;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  position: sticky;
+}
+
+.menu .container {
+  justify-content: space-between;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--clr-light);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: var(--clr-primary);
+}
+
+.btn {
+  background: var(--clr-primary);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(255, 127, 80, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(255, 127, 80, 0.5);
+}
+
+.section {
+  background: var(--clr-card);
+  padding: 60px 20px;
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 1200px;
+  scroll-margin-top: 150px;
+}
+
+.plan-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  flex: 1 1 250px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 350px;
+  padding: 40px 30px;
+  font-size: 1.2rem;
+  min-width: 350px;
+  max-width: 450px;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+#bmi-result {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#bmi-result.healthy {
+  color: #4caf50;
+}
+
+#bmi-result.overweight {
+  color: #ff9800;
+}
+
+#bmi-result.obese {
+  color: #f44336;
+}
+
+#bmi-result.underweight {
+  color: #2196f3;
+}
+
+footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--clr-primary);
+  letter-spacing: 2px;
+  font-family: 'Nunito', sans-serif;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.trainer {
+  background: #222;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  flex: 1 1 250px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+#cal-result,
+#bf-result,
+#iw-result,
+#bmr-result {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.mobile-btn {
+  font-size: 28px;
+  color: var(--clr-text);
+  cursor: pointer;
+  display: none;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.mobile-btn.open {
+  transform: rotate(90deg);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px 20px;
+  background: radial-gradient(circle at top, #1c1c1c, #000);
+}
+
+header .text {
+  max-width: 800px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+header .visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+header img {
+  max-width: 90%;
+  border-radius: 12px;
+}
+
+#why-us h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#why-us ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#why-us li {
+  font-size: 1.2rem;
+  background: #222;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.explore-video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 30px auto;
+  background: #222;
+}
+
+#explore {
+  text-align: center;
+}
+
+#plans h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#explore h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#features h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    gap: 10px;
+  }  
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1.2rem;
+  }
+  .section {
+    padding: 30px 10px;
+  }
+  .plan-card, .trainer {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .section{
+    scroll-margin-top: 200px;
+  }
+}

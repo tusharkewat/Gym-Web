@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Fitness - Gym & Training</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="Media\Logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="menu">
+    <div class="container flex">
+      <div class="logo">
+        <span class="logo-text">Elite Fitness</span>
+      </div>
+      <ul class="nav">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#why-us">Why Us</a></li>
+        <li class="nav-item"><a href="#explore">Explore</a></li>
+        <li class="nav-item"><a href="#plans">Plans</a></li>
+        <li class="nav-item"><a href="#features">Tools</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#plans" class="btn">Join Now</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="text">
+      <h1>Transform Your <span style="color:var(--clr-primary);">Body & Mind</span></h1>
+      <p>Welcome to Elite Fitness – where expert trainers, premium equipment, and personalized programs help you achieve
+        your fitness goals.</p>
+      <a href="#plans" class="btn">Get Started</a>
+    </div>
+    <div class="visual">
+      <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/banner-img.png"
+        alt="Workout Banner" />
+    </div>
+  </header>
+
+  <div class="section" id="why-us">
+    <h2>Why Choose Elite Fitness?</h2>
+    <ul>
+      <li> Certified Personal Trainers</li>
+      <li> Modern Equipment & Facility</li>
+      <li> Flexible Membership Options</li>
+      <li> Customized Diet & Workout Plans</li>
+      <li> 24/7 Support and Guidance</li>
+    </ul>
+  </div>
+
+  <div class="section" id="explore">
+    <h2>Explore Our Club</h2>
+    <video class="explore-video" src="Media\Elite Fitness Club.mp4" controls poster="your-poster-image.jpg"></video>
+  </div>
+
+  <div class="section" id="plans">
+    <h2 style="text-align:center;">Membership Plans</h2>
+    <div class="container flex">
+      <div class="trainer">
+        <h3>Basic</h3>
+        <p>Access to gym equipment<br>₹999/month</p><a href="#contact" class="btn">Choose</a>
+      </div>
+      <div class="trainer">
+        <h3>Pro</h3>
+        <p>Includes group classes + Basic<br>₹1999/month</p><a href="#contact" class="btn">Choose</a>
+      </div>
+      <div class="trainer">
+        <h3>Elite</h3>
+        <p>Personal Trainer + Diet Plan + Pro<br>₹2999/month</p><a href="#contact" class="btn">Choose</a>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="features">
+    <h2 style="text-align:center;">Our Smart Fitness Tools</h2>
+    <div class="container flex">
+      <div class="trainer">
+        <h3>BMI Calculator</h3>
+        <p>Find out if you're underweight, normal, overweight, or obese.</p>
+        <a href="bmi.html" class="btn">Try Now</a>
+      </div>
+      <div class="trainer">
+        <h3>Maintenance Calories</h3>
+        <p>Know how many calories you need daily to maintain weight.</p>
+        <a href="calories.html" class="btn">Try Now</a>
+      </div>
+      <div class="trainer">
+        <h3>Body Fat Calculator</h3>
+        <p>Estimate your body fat percentage using your measurements.</p>
+        <a href="bodyfat.html" class="btn">Try Now</a>
+      </div>
+      <div class="trainer">
+        <h3>Ideal Weight</h3>
+        <p>See the recommended weight range for your height.</p>
+        <a href="idealweight.html" class="btn">Try Now</a>
+      </div>
+      <div class="trainer">
+        <h3>BMR Calculator</h3>
+        <p>Calculate your Basal Metabolic Rate (calories burned at rest).</p>
+        <a href="bmr.html" class="btn">Try Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="contact">
+    <h2 style="text-align:center">Join Us</h2>
+    <div class="container">
+      <input type="text" placeholder="Full Name" id="join-fullname" required>
+      <input type="number" placeholder="Age" id="join-age" required>
+      <input type="email" placeholder="Email" id="join-email" required>
+      <input type="number" placeholder="Contact number" id="join-number" required>
+      <textarea placeholder="Your Fitness Goal" rows="4" id="join-goal"></textarea>
+      <button type="button" onclick="submitJoinUsForm()" class="btn">Submit</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Elite Fitness. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

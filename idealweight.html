@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ideal Weight Calculator - Elite Fitness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Media\Logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="menu">
+    <div class="container flex">
+      <div class="logo">
+        <span class="logo-text">Elite Fitness</span>
+      </div>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="bmi.html">BMI</a></li>
+        <li class="nav-item"><a href="calories.html">Calories</a></li>
+        <li class="nav-item"><a href="bodyfat.html">Body Fat</a></li>
+        <li class="nav-item"><a href="idealweight.html">Ideal Weight</a></li>
+        <li class="nav-item"><a href="bmr.html">BMR</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h1 style="text-align:center;">Ideal Weight Calculator</h1>
+    <div class="container">
+      <p>The Ideal Weight Calculator computes ideal body weight (IBW) ranges based on height, gender, and age. The idea
+        of finding the IBW using a formula has been sought after by many experts for a long time. Currently, there
+        persist several popular formulas, and our Ideal Weight Calculator provides their results for side-to-side
+        comparisons.</p>
+      <select id="iw-gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input type="number" id="iw-height" placeholder="Height (cm)">
+      <button onclick="calculateIdealWeight()" class="btn">Calculate</button>
+      <p id="iw-result"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Elite Fitness</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

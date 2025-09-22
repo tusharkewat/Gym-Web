@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance Calories Calculator - Elite Fitness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Media\Logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="menu">
+    <div class="container flex">
+      <div class="logo">
+        <span class="logo-text">Elite Fitness</span>
+      </div>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="bmi.html">BMI</a></li>
+        <li class="nav-item"><a href="calories.html">Calories</a></li>
+        <li class="nav-item"><a href="bodyfat.html">Body Fat</a></li>
+        <li class="nav-item"><a href="idealweight.html">Ideal Weight</a></li>
+        <li class="nav-item"><a href="bmr.html">BMR</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h1 style="text-align:center;">Maintenance Calories (TDEE)</h1>
+    <div class="container">
+      <p>The Calorie Calculator can be used to estimate the number of calories a person needs to consume each day.
+      </p>
+      <input type="number" id="cal-weight" placeholder="Weight (kg)">
+      <input type="number" id="cal-height" placeholder="Height (cm)">
+      <input type="number" id="cal-age" placeholder="Age (years)">
+      <select id="cal-gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <select id="cal-activity">
+        <option value="1.2">Sedentary: little or no exercise</option>
+        <option value="1.375">Lightly Active: exercise 1-3 times/week</option>
+        <option value="1.55">Moderately Active: exercise 4-5 times/week</option>
+        <option value="1.725">Very Active: exercise 6-7 times/week</option>
+        <option value="1.9">Extra Active: very intense exercise daily, or physical job</option>
+      </select>
+      <button onclick="calculateCalories()" class="btn">Calculate</button>
+      <p id="cal-result"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Elite Fitness</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

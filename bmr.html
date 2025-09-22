@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMR Calculator - Elite Fitness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Media\Logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="menu">
+    <div class="container flex">
+      <div class="logo">
+        <span class="logo-text">Elite Fitness</span>
+      </div>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="bmi.html">BMI</a></li>
+        <li class="nav-item"><a href="calories.html">Calories</a></li>
+        <li class="nav-item"><a href="bodyfat.html">Body Fat</a></li>
+        <li class="nav-item"><a href="idealweight.html">Ideal Weight</a></li>
+        <li class="nav-item"><a href="bmr.html">BMR</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h1 style="text-align:center;">BMR Calculator</h1>
+    <div class="container">
+      <p>The Basal Metabolic Rate (BMR) Calculator estimates your basal metabolic rate—the amount of energy expended
+        while at rest in a neutrally temperate environment, and in a post-absorptive state (meaning that the digestive
+        system is inactive, which requires about 12 hours of fasting).</p>
+      <input type="number" id="bmr-weight" placeholder="Weight (kg)">
+      <input type="number" id="bmr-height" placeholder="Height (cm)">
+      <input type="number" id="bmr-age" placeholder="Age (years)">
+      <select id="bmr-gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button onclick="calculateBMR()" class="btn">Calculate</button>
+      <p id="bmr-result"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Elite Fitness</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
