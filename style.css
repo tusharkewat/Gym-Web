@@ -326,10 +326,17 @@ header img {
     padding: 30px 10px;
     scroll-margin-top: 200px;
     align-items: center;
+    padding: 30px 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .plan-card, .trainer {
     flex: 1 1 100%;
     max-width: 100%;
     margin: 10px auto;
+  }
+  body{
+    align-items: center;
+    justify-content: center;
   }
 }
